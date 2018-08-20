@@ -20,6 +20,9 @@ class App extends Component {
           <h4>
             <Link to="/ajax">Ajax</Link>
           </h4>
+          <h4>
+            <Link to="/slow-ajax">Slow Ajax</Link>
+          </h4>
         </p>
       </div>
     );

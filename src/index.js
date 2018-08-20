@@ -12,7 +12,14 @@ ReactDOM.render(
   <Router>
     <div>
       <Route exact path="/" component={App} />
-      <Route path="/ajax" component={Ajax} />
+      <Route
+        path="/ajax" 
+        render={() => <Ajax isSlow={false} /> } 
+      />
+      <Route
+        path="/slow-ajax" 
+        render={() => <Ajax isSlow={true} /> } 
+      />
     </div>
   </Router>
 , document.getElementById('root'));
